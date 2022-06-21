@@ -40,7 +40,9 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", require: false
+#gem "bootsnap", require: false
+
+gem 'bootsnap', '~> 1.1', '>= 1.1.7', require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
@@ -55,7 +57,6 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem "web-console"
   gem 'capistrano', '~> 3.4'
   gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-rbenv', '~> 2.2'
