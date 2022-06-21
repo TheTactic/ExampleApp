@@ -60,7 +60,7 @@ group :development do
   gem 'capistrano', '~> 3.4'
   gem "capistrano-rails", "~> 1.6", require: false
   gem 'capistrano-rbenv', '~> 2.2'
-  gem 'capistrano-db-tasks', '~> 0.6'
+  gem 'capistrano-db-tasks', '~> 0.6', require: false
   gem 'web-console'
   gem 'listen'
   gem 'spring'
