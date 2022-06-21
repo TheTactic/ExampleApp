@@ -1,6 +1,11 @@
 
-server '52.91.206.221', user: 'deploy', roles: %w{web app db}
-set :rails_env, 'production'
+server "52.91.206.221", user: "deploy", roles: %w{web app db}
+set :rails_env, "production"
+
+
+
+ #set :ssh_options, { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa) }
+   
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
